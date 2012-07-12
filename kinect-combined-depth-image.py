@@ -20,6 +20,8 @@ depth_generator.create(context)
 image_generator = ImageGenerator()
 image_generator.create(context)
 
+depth_generator.alternative_view_point_cap.set_view_point(image_generator)
+
 context.start_generating_all()
 
 pygame.init()
